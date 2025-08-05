@@ -1,0 +1,62 @@
+/*html, body {
+  margin: 0;
+  padding: 0;
+  background: #f0f1ec;
+}
+
+.logo {
+  display: block;
+  width: 100vw;
+  height: 100vw;
+}
+
+.gallery {
+  display: flex;
+}
+
+.gallery img {
+  margin: 0;
+}
+
+.gallery.narrow img {
+  width: calc(100vw/3);
+  aspect-ratio: 0.75;
+  margin: 0;
+}
+
+.gallery.wide img {
+  width: calc(100vw/2);
+  aspect-ratio: calc(4/3);
+  margin: 0;
+}
+
+@media (min-aspect-ratio: 0.5) {
+  .logo {
+    width: 50vh;
+    height: 50vh;
+    margin: 0 auto;
+  }
+}
+
+@media (min-aspect-ratio: 1.0) {
+  .logo {
+    width: 50vh;
+    height: 50vh;
+    float: left;
+  }
+
+  .gallery {
+    clear: both;
+  }
+}
+
+@media (min-aspect-ratio: 1.5) {
+  .logo {
+    width: 100vh;
+    height: 100vh;
+  }
+
+  .gallery {
+    clear: none;
+  }
+}*/

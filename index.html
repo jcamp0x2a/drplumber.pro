@@ -2,10 +2,103 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
+
     <title>Dr. Plumber</title>
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/photoswipe.css" />
+    
+    <script type="module">
+      import PhotoSwipeLightbox from './js/photoswipe-lightbox.esm.min.js';
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery',
+        children: 'a',
+        pswpModule: () => import('./js/photoswipe.esm.min.js')
+      });
+      lightbox.init();
+    </script>
   </head>
+  
   <body>
-    <img class="logo" src="images/logo.png" alt="Dr. Plumber 757-401-4296" />
+    <img class="logo" src="./images/logo.png" alt="Dr. Plumber, 757-401-4296" />
+    
+    <div class="text">
+      <h1>Text goes here!</h1>
+    </div>
+
+    <div id="gallery" class="pswp-gallery pswp-gallery--single-column">
+      <a href="./images/1000/DrPlumber.jpg" 
+          data-pswp-width="750" 
+          data-pswp-height="1000" 
+          target="_blank">
+        <img src="./images/200/DrPlumber.jpg" alt="" />
+      </a>
+      <a href="./images/1000/DrPlumberVehicle.jpg" 
+          data-pswp-width="1000" 
+          data-pswp-height="750" 
+          target="_blank">
+        <img src="./images/200/DrPlumberVehicle.jpg" alt="" />
+      </a>
+      <a href="./images/1000/DrPlumberWaterHeater.jpg" 
+          data-pswp-width="750" 
+          data-pswp-height="1000" 
+          target="_blank">
+        <img src="./images/200/DrPlumberWaterHeater.jpg" alt="" />
+      </a>
+      <a href="./images/1000/GasLeakDetector.jpg" 
+          data-pswp-width="750" 
+          data-pswp-height="1000" 
+          target="_blank">
+        <img src="./images/200/GasLeakDetector.jpg" alt="" />
+      </a>
+      <a href="./images/1000/SewerCamera.jpg" 
+          data-pswp-width="1000" 
+          data-pswp-height="750" 
+          target="_blank">
+        <img src="./images/200/SewerCamera.jpg" alt="" />
+      </a>
+      <a href="./images/1000/SewerWork.jpg" 
+          data-pswp-width="750" 
+          data-pswp-height="1000" 
+          target="_blank">
+        <img src="./images/200/SewerWork.jpg" alt="" />
+      </a>
+      <a href="./images/1000/ShowerRetrofit.jpg" 
+          data-pswp-width="750" 
+          data-pswp-height="1000" 
+          target="_blank">
+        <img src="./images/200/ShowerRetrofit.jpg" alt="" />
+      </a>
+      <a href="./images/1000/SinkFaucet.jpg" 
+          data-pswp-width="750" 
+          data-pswp-height="1000" 
+          target="_blank">
+        <img src="./images/200/SinkFaucet.jpg" alt="" />
+      </a>
+      <a href="./images/1000/TanklessWaterHeater1.jpg" 
+          data-pswp-width="750" 
+          data-pswp-height="1000" 
+          target="_blank">
+        <img src="./images/200/TanklessWaterHeater1.jpg" alt="" />
+      </a>
+      <a href="./images/1000/TanklessWaterHeater2.jpg" 
+          data-pswp-width="1000" 
+          data-pswp-height="750" 
+          target="_blank">
+        <img src="./images/200/TanklessWaterHeater2.jpg" alt="" />
+      </a>
+      <a href="./images/1000/Toilet.jpg" 
+          data-pswp-width="750" 
+          data-pswp-height="1000" 
+          target="_blank">
+        <img src="./images/200/Toilet.jpg" alt="" />
+      </a>
+      <a href="./images/1000/TubInstall.jpg" 
+          data-pswp-width="750" 
+          data-pswp-height="1000" 
+          target="_blank">
+        <img src="./images/200/TubInstall.jpg" alt="" />
+      </a>
+    </div>
   </body>
 </html>
