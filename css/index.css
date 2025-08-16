@@ -38,6 +38,7 @@ main {
   background: #eee;
   border-top: 4px solid #823835;
   border-bottom: 4px solid #b63b3a;
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 }
 
 #text > :first-child {
