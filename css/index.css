@@ -22,7 +22,7 @@ main {
   width: 100vw;
   max-height: 50vh;
   background: #fefdf9;
-  border-bottom: 0.25em solid #b63b3a;
+  border-bottom: 4px solid #b63b3a;
 }
 
 #logo img {
@@ -34,10 +34,10 @@ main {
 
 #text {
   grid-area: text;
-  padding: 2em;
+  padding: 32px;
   background: #eee;
-  border-top: 0.25em solid #823835;
-  border-bottom: 0.25em solid #b63b3a;
+  border-top: 4px solid #823835;
+  border-bottom: 4px solid #b63b3a;
 }
 
 #text > :first-child {
@@ -60,24 +60,24 @@ h4 {
   grid-area: gallery;
   display: flex;
   flex-wrap: wrap;
-  padding: 1.5em;
+  padding: 24px;
   background: #0c4367;
-  border-top: 0.25em solid #823835;
+  border-top: 4px solid #823835;
   align-items: center;
   justify-content: center;
 }
 
 #gallery img {
-  width: 9em;
-  height: 12em;
-  margin: 0.5em;
+  width: 150px;
+  height: 200px;
+  margin: 8px;
   border: 1em solid #fefdf9;
   object-fit: cover;
 }
 
-@media (min-width: 64em) or (min-aspect-ratio: 1) {
+@media (min-width: 1024px) or (min-aspect-ratio: 1) {
   main {
-    max-width: 64em;
+    max-width: 1024px;
     margin: 0 auto;
     grid-template-areas:
       "logo    text"
@@ -87,7 +87,7 @@ h4 {
 
   #logo {
     width: 50vw;
-    max-width: 32em;
+    max-width: 512px;
     max-height: 100%;
   }
 
@@ -96,8 +96,8 @@ h4 {
   }
 
   #text {
-    width: calc(50vw - 4em);
-    max-width: 28em;
+    width: calc(50vw - 64px);
+    max-width: 448px;
     background: #fefdf9;
     border-top: none;
   }
